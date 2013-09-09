@@ -1,5 +1,4 @@
-#ENV['GEM_PATH'] = 'vendor/cache'
-#require 'rubygems'
+$:.unshift File.dirname(__FILE__) + '/bundle'
 require 'puppet'
 require 'pp'
 
@@ -7,7 +6,6 @@ Puppet[:environment] = 'master'
 Puppet[:manifest] = 'site.pp'
 Puppet[:modulepath] = 'modules/'
 
-Puppet.settings.preferred_run_mode = "user"
 Puppet.settings.initialize_app_defaults({
   :logdir     => "/dev/null",
   :confdir    => "/dev/null",
