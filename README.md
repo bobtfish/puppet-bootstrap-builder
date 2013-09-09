@@ -12,3 +12,5 @@ and then we have a tool to do the following:
   * Generate a shell script containing this tar file base64'd + a shim which
     unwraps it, then executes the bundled version of puppet against the manifests/bootstrap.pp
 
+Note to self: http://megastep.org/makeself/
+
